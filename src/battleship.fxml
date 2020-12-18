@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BattleshipController">
+   <children>
+      <Text layoutX="170.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game over!" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="111.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@battleship.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="222.0" prefHeight="200.0" prefWidth="400.0">
+         <children>
+            <Text fx:id="resultsText" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="400.0" />
+         </children>
+      </Pane>
+      <Button fx:id="resultsButton" layoutX="158.0" layoutY="248.0" mnemonicParsing="false" onAction="#resultsClick" text="Show Results" />
+   </children>
+</AnchorPane>
